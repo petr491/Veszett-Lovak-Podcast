@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexible Video Grid</title>
+  <style>
+    .video-container {
+      display: flex;
+      flex-wrap: wrap; /* allows wrapping to new lines */
+      justify-content: center;
+      gap: 20px; /* space between videos */
+      padding: 20px;
+    }
+
+    .video-container video {
+      width: 300px; /* or any size you want */
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .video-container video:hover {
+      transform: scale(1.2); /* grows while hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align: center;">Hover Over the Videos</h2>
+
+  <div class="video-container">
+    <video controls>
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+      <source src="video3.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+      <source src="video4.mp4" type="video/mp4">
+    </video>
+
+    <!-- Add more videos as needed -->
+  </div>
+
+</body>
+</html>
